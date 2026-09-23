@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Live Quiz Platform</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .container {
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+      padding: 40px;
+      max-width: 500px;
+      width: 100%;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .subtitle {
+      color: #666;
+      margin-bottom: 40px;
+      font-size: 1.1rem;
+    }
+
+    .role-btn {
+      display: block;
+      width: 100%;
+      padding: 25px;
+      margin: 15px 0;
+      font-size: 1.3rem;
+      font-weight: 600;
+      border: none;
+      border-radius: 15px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      color: white;
+    }
+
+    .role-btn.host {
+      background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    }
+
+    .role-btn.host:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 30px rgba(245, 87, 108, 0.4);
+    }
+
+    .role-btn.player {
+      background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    }
+
+    .role-btn.player:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 30px rgba(79, 172, 254, 0.4);
+    }
+
+    .features {
+      margin-top: 40px;
+      padding-top: 30px;
+      border-top: 1px solid #eee;
+    }
+
+    .features h3 {
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    .features ul {
+      list-style: none;
+      text-align: left;
+    }
+
+    .features li {
+      padding: 10px 0;
+      color: #666;
+      font-size: 0.95rem;
+    }
+
+    .features li::before {
+      content: "✓";
+      color: #667eea;
+      font-weight: bold;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🎯 Quiz Live</h1>
+    <p class="subtitle">Real-Time Multiplayer Quiz Platform</p>
+    
+    <a href="host.html" class="role-btn host">
+      🎤 Host a Quiz
+    </a>
+    
+    <a href="player.html" class="role-btn player">
+      🎮 Join a Quiz
+    </a>
+
+    <div class="features">
+      <h3>Features</h3>
+      <ul>
+        <li>Synchronized countdown timers</li>
+        <li>Speed-based scoring system</li>
+        <li>Live leaderboard updates</li>
+        <li>Anti-cheat validation</li>
+        <li>4-digit PIN room codes</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
